@@ -6,6 +6,14 @@ Medium-green: #55c57a
 Dark-green: #28b485
 
 */
+
+$primary-color: #7ed56f;
+$primary-color-light: #55c57a;
+$primary-color-dark: #28b485;
+
+$color-grey: #777;
+$color-white: #fff;
+
 *,
 *::after,
 *::before {
@@ -23,7 +31,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  color: #777;
+  color: $color-grey;
   padding: 3rem;
 }
 
@@ -31,8 +39,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(85, 197, 122, 0.8),
-      rgba(40, 180, 133, 0.8)
+      rgba($primary-color-light, 0.8),
+      rgba($primary-color-dark, 0.8)
     ),
     url('../img/hero.jpg');
   background-size: cover;
@@ -60,7 +68,7 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   margin-bottom: 6rem;
 }
@@ -70,6 +78,7 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -80,6 +89,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+
   animation: moveInRight 1s ease-out;
 }
 
@@ -88,27 +98,33 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   80% {
     transform: translateX(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   80% {
     transform: translateX(-1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -132,8 +148,8 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey;
 }
 
 .btn::after {
@@ -151,7 +167,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
@@ -170,10 +186,9 @@ body {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
