@@ -13,5 +13,8 @@
     "url": "https://github.com/gauravburjwal/natours/issues"
   },
   "homepage": "https://github.com/gauravburjwal/natours#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.79.4"
+  }
 }
