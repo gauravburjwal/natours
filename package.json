@@ -1,0 +1,17 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravburjwal/natours.git"
+  },
+  "author": "Gaurav Burjwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gauravburjwal/natours/issues"
+  },
+  "homepage": "https://github.com/gauravburjwal/natours#readme",
+  "description": ""
+}
