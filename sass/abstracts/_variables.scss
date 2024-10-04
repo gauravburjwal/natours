@@ -6,13 +6,18 @@ Medium-green: #55c57a
 Dark-green: #28b485
 */
 
-$primary-color: #7ed56f;
-$primary-color-light: #55c57a;
+$primary-color: #55c57a;
+$primary-color-light: #7ed56f;
 $primary-color-dark: #28b485;
+
+$color-grey-light-1: #f7f7f7;
 
 $color-grey-dark: #777;
 $color-white: #fff;
 $color-black: #000;
+
+// FONT
+$default-font-size: 1.6rem;
 
 // GRID
 $grid-width: 114rem;
